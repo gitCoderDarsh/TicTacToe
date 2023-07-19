@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eks & Jeero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>
+            <span onmouseover="onover()" onmouseout="onout()" id="change">Eks &amp; Jeero</span>
+        </h1>
+    </nav>
+    <script src="script.js"></script>
+    <div id="mast">
+        <div id="sabsebadachoose">
+            <p id="choosetext">player 1 select: </p>
+            <div id="badachoose">
+                <button class="choose" onclick="chooseX()">X</button>
+                <button class="choose" onclick="choose0()">0</button>
+            </div>
+        </div>
+
+        <div class="info"><p id="beingtext"></p></div>
+    </div>
+    
+    <div class="gamecontainer">
+        <div class="game">
+            <div class="elements bl-0 bt-0"><span class="gametext"></span></div>
+            <div class="elements bt-0"><span class="gametext"></span></div>
+            <div class="elements bt-0 br-0"><span class="gametext"></span></div>
+            <div class="elements bl-0"><span class="gametext"></span></div>
+            <div class="elements"><span class="gametext"></span></div>
+            <div class="elements br-0"><span class="gametext"></span></div>
+            <div class="elements bl-0 bb-0"><span class="gametext"></span></div>
+            <div class="elements bb-0"><span class="gametext"></span></div>
+            <div class="elements bb-0 br-0"><span class="gametext"></span></div>
+        </div>
+    </div>
+    <div class="button">
+        <button id="reset" onclick="reset()">Play Again</button>
+    </div>
+</body>
+</html>

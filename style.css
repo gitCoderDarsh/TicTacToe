@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&family=Tektur&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: rgba(255, 248, 220, 0.4); 
+    color: rgba(0, 0, 0, 0.6); 
+}
+
+body{
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Tektur', cursive;
+}
+
+nav h1{
+    text-align: center;
+    background-color: rgba(255, 248, 220, 0.1);
+    font-size: xx-large;
+}
+
+.gamecontainer{
+    display: flex;
+    /* margin-top: vw; */
+    background-color:  rgba(255, 248, 220, 0.1);
+}
+
+.game{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Moirai One', cursive;
+}
+
+.elements{
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+}
+
+.elements:hover{
+    background-color: rgba(245, 245, 245, 0.2);
+    cursor: pointer;
+}
+
+.info{
+    width: 100%;
+    /* height: 15vw; */
+    text-align: center;
+    font-size: 4vw;
+}
+
+.button{
+    display:flex;
+    justify-content: center;
+}
+
+#reset{
+    margin-top: 3vw;
+    font-family: 'Tektur';
+    font-size: x-large;
+    padding: 1.5vw 4vw 1.5vw 4vw;
+    border: none;
+    border-radius: 3vw;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#reset:hover{
+    background-color: green;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#badachoose{
+    text-align: center;
+}
+
+.choose{
+    height: 7vw;
+    width: 7vw;
+    font-family: 'Tektur';
+    font-size: 5vw;
+    border: none;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.choose:hover{
+    background-color: green;
+}
+
+#choosetext{
+    text-align: center;
+    font-size: 4vw;
+    /* background-color: rgba(245, 245, 245, 0.2); */
+}
+
+#mast{
+    height: 16vw;
+}
